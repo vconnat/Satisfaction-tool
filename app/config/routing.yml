@@ -1,0 +1,4 @@
+satisfaction:
+    resource: "@SatisfactionBundle/Resources/config/routing.yml"
+    prefix:   /
+
