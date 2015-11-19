@@ -4,8 +4,7 @@
 ##Description du projet :
 
 
-Satisfaction tool permet de collecter chaque mois humeur, appréciation de l'équilibre vie pro / vie perso et principaux irritants des salariés. 
-il automatise la génération de reportings à destination des managers et directeurs et la consolidation annuelle des éléments remontés.
+Satisfaction tool permet de collecter chaque mois l'humeur, l'équilibre vie pro / vie perso et les principaux irritants des salariés. L'outil permet ensuite d'automatiser la génération de reportings à destination des managers et directeurs ainsi qu'une consolidation annuelle des éléments remontés.
 
 ##Dépendances :
 
