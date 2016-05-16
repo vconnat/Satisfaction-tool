@@ -1,0 +1,56 @@
+<form id="validationSatisfactionForm">
+    <h3>{{ form_label( form.psHumorType ) }}</h3>
+    <table border=0 cellspacing=0 cellpadding=0>
+        <tr>
+            {% set humorCounter = 0 %}
+            {% for k,humor in form.psHumorType %}
+                <td class="smileyCol"><img src="{{ asset('bundles/ajaxsatisfaction/images/'~ humors[k]['image'] ) }}" /></td>
+                <td class="inputCol" style="padding-right:20px;">{{ form_widget( humor, { 'attr': { 'class': 'hmrChoice', 'onClick': 'showIrritantField('~humors[k]["showIrr"]~')' }} ) }} {{ form_label( humor, null, {'label_attr': {'class': 'lblText'}} ) }}</td>
+
+                {% set humorCounter = humorCounter + 1 %}
+
+                {% if humorCounter == 2 %}
+                    {% set humorCounter = 0 %}
+                    </tr>
+                    <tr>
+                {% endif %}
+            {% endfor %}
+        </tr>
+    </table>
+
+    <table border=0 cellspacing=0 cellpadding=0 id="ac_maintIrritant_table" style="margin-top:5px; display:none;">
+        <tr>
+            <td class="inputCol">{{ form_label( form.mainIrritant, null, {'label_attr': {'class': 'lblText'}} ) }}</td>
+            <td>{{ form_widget( form.mainIrritant ) }}</td>
+        </tr>
+    </table>
+
+    <h3>{{ form_label( form.psEquilibriumType ) }} <span class="subtext">( Charge de travail actuelle )</span></h3>
+    <table border=0 cellspacing=0 cellpadding=0 style="width:100%;">
+        <tr>
+            {% set equilibriumCounter = 0 %}
+            {% for k,equilibrium in form.psEquilibriumType %}
+                <td class="smileyCol"><img src="{{ asset('bundles/ajaxsatisfaction/images/'~ equilibriums[k]['image'] ) }}" /></td>
+                <td class="inputCol" style="padding-right:20px;">{{ form_widget( equilibrium ) }} {{ form_label( equilibrium, null, {'label_attr': {'class': 'lblText'}} ) }}</td>
+
+                {% set equilibriumCounter = equilibriumCounter + 1 %}
+
+                {% if equilibriumCounter == 3 %}
+                    {% set equilibriumCounter = 0 %}
+                    </tr>
+                    <tr>
+                {% endif %}
+            {% endfor %}
+        </tr>
+    </table>
+
+    <h3>{{ form_label( form.availabilityManager ) }}</h3>
+    <table border=0 cellspacing=0 cellpadding=0>
+        <tr>
+            {% for k,avManager in form.availabilityManager %}
+                <td class="centered inputCol">{{ form_widget( avManager ) }} {{ form_label( avManager, null, {'label_attr': {'class': 'lblText'}} ) }}</td>
+            {% endfor %}
+        </tr>
+    </table>
+    <div style="display:none;">{{ form_rest(form) }}</div>
+</form>

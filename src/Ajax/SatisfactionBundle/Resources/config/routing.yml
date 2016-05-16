@@ -1,0 +1,11 @@
+ajax_satisfaction_ajaxIndex:
+    path:     /ajaxIndex
+    defaults: { _controller: AjaxSatisfactionBundle:Default:ajaxIndex }
+
+ajax_satisfaction_ajaxIndexSubmit:
+    path:     /ajaxIndexSubmit
+    defaults: { _controller: AjaxSatisfactionBundle:Default:ajaxIndexSubmit }
+
+ajax_satisfaction_example:
+    path:     /satisfactionExample
+    defaults: { _controller: AjaxSatisfactionBundle:Example:index }

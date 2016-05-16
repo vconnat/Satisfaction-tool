@@ -1,7 +1,0 @@
-satisfaction_homepage:
-    path:     /
-    defaults: { _controller: SatisfactionBundle:Default:index }
-
-validate_form_ajax:
-    path:   /validateForm
-    defaults: { _controller: SatisfactionBundle:Default:ajaxSubmit }

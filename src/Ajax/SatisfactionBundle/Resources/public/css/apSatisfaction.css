@@ -1,0 +1,91 @@
+.ui-widget-content-style{
+	background: #FFFFFF !important;
+}
+
+.ui-button-text{
+	font-size: 13px;
+}
+
+.validationDialog
+{
+	box-shadow: inset 0 1px 3px #fff, 0 0 3px #ccc;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+	background-color: #FFFFFF;
+	padding: 20px 20px 20px 10px;
+	font-size: 12px;
+	/*display: none;*/
+}
+
+.validationDialog h3{
+	color: #282828;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0;
+	border-bottom: 1px solid #282828;
+}
+
+.validationDialog h3 span.subtext{
+	color: #686868;
+	font-size: 11px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.validationDialog table{
+	margin: 10px auto;
+    width: 380px;
+	color: #686868;
+	background-color: transparent;
+}
+
+.validationDialog table  td.smileyCol{
+	width:25px;
+}
+
+.validationDialog table  td.inputCol{
+	height: 16px; 
+	padding: 8px 4px;
+}
+
+.validationDialog table  td.inputCol label.lblText{
+	vertical-align: top; 
+	line-height: 20px; 
+	display: inline-block;
+	font-size: 12px;
+}
+
+.validationDialog table tbody{
+	background-color: transparent;
+}
+
+.validationDialog select{
+	font-size: 13px;
+}
+
+.validationDialog .centered{
+	text-align: center;
+}
+
+.ui-dialog-noshow{
+	display: none;
+	float: right;
+    border: 0;
+    padding: 0;
+}
+
+.ui-dialog-titlebar-close {
+    top: 0;
+    right: 0;
+    margin: 0;
+    z-index: 999;
+}
+
+.ui-widget{
+	font-size: 14px;
+}
+
+.message-red-alert{
+	color: red;
+	font-weight: bold;
+}
