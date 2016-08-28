@@ -8,8 +8,13 @@ Satisfaction tool permet de collecter chaque mois l'humeur, l'équilibre vie pro
 
 ##Dépendances :
 
-    + Php5 / mysql
-    + Composer
+L'outil est développé en base d'une application Symfony. L'application genere sa propre base de données et ils est indépendante du site. Les données sont sauvegardées grâce a une fonction basique Ajax.
+
+    + PHP >= 5.3.3
+    + Symfony >= 2.3
+    + HTML5, CSS3
+    + MySQL Database
+    + Javascript & Jquery (Jquery modal spécifiquement - js & css)
 
 ##Démontration:
 
@@ -19,6 +24,6 @@ Satisfaction tool permet de collecter chaque mois l'humeur, l'équilibre vie pro
 
 ##Intégration :
 
+Vous souhaitez que l'on intègre cette application avec vous, alors n'hésitez pas à contacter par mail l'équipe IT / Web de Davidson à l'adresse suivante : davidson@davidson.fr
 
-Vous souhaitez que l'on intègre cette application avec vous, 
-alors n'hésitez pas à contacter par mail l'équipe IT / Web de Davidson à l'adresse suivante : davidson@davidson.fr
+
