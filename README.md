@@ -8,7 +8,16 @@ Satisfaction tool permet de collecter chaque mois l'humeur, l'équilibre vie pro
 
 ## Installation
 
+Sur debian
 
+	+ mysql -uroot -ppassword -e "create database satisfaction;"
+	+ Créer un utilisateur pour la base de données
+	+ 
+	+ composer udpate
+	+ php app/console doctrine:schema:update --force
+	+ php app/console fos:user:create:test test@localhost test
+	+ php app/console ajax:satisfaction:create:data
+	+ php app/console assets:install --relative --symlink
 
 ##Dépendances :
 
