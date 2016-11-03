@@ -6,6 +6,10 @@
 
 Satisfaction tool permet de collecter chaque mois l'humeur, l'équilibre vie pro / vie perso et les principaux irritants des salariés. L'outil permet ensuite d'automatiser la génération de reportings à destination des managers et directeurs ainsi qu'une consolidation annuelle des éléments remontés.
 
+## Installation
+
+
+
 ##Dépendances :
 
 L'outil est développé en base d'une application Symfony. L'application genere sa propre base de données et ils est indépendante du site. Les données sont sauvegardées grâce a une fonction basique Ajax.
